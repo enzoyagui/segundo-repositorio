@@ -5,26 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
-
+    <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/apresentacao.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <span class="cabecalho_menu-hamburguer"></span> 
-        <img class="cabecalho-imagem" src="img/alurastart_logo.png" alt="logo AluraStart">
+        <div class="container">
+            <input type="checkbox"  id="menu"    class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu  container__imagem"> </span> 
+            </label>
 
-        <ul class="cabecalho-lista">
-            <li class="cabecalho-lista-item">Escola</li>
-            <li class="cabecalho-lista-item">Estudantes</li>
+            <ul class="cabecalho-lista">
+                <li class="cabecalho-lista-titulo"> Categorias </li>
+                <li class="cabecalho-lista-item"><a href="#" class="menu__lista-item"> Serviços</a></li>
+                <li class="cabecalho-lista-item"><a href="#" class="menu__lista-item"> Projetos</a></li>
+                <li class="cabecalho-lista-item"><a href="#" class="menu__lista-item"> Contato </a></li>
+            </ul>
+      
+            <img class="cabecalho-imagem  container__imagem" src="./img/alurastart_logo.png" alt="logo AluraStart">
+            <h1 class="container-titulo"> NOME da Empresa </h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox"   id="opcoes-menu"    class="opcoes__botao">
+            <label for="opcoes-menu"> 
+                <li class="opcoes__item"> CATEGORIAS </li>
+            </label>
+
+            <ul class="cabecalho-lista">
+                <li class="cabecalho-lista-item">
+                    <a href="#" class="menu__lista-item">Opção 1 </a>
+                </li>
+                <li class="cabecalho-lista-item">
+                    <a href="#" class="menu__lista-item">Opção 2 </a>
+                </li>
+                <li class="cabecalho-lista-item">
+                    <a href="#" class="menu__lista-item">Opção 3 </a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">  Escola  </a> </li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">  Estudante  </a></li>
+
         </ul>
+
+        <div class="container">
+            <a href="#"> <img  class="cabecalho-imagem cabecalho__favorito" src="./img/favoritos.svg" alt="Meus favoritos"> </a>
+            <a href="#" class="container__link" >
+                <img class="cabecalho-imagem" src="./img/compras.svg" alt="Carrinho de compras">
+                <p class="container__texto"> Minha Sacola </p>
+            </a>
+            <a href="#" class="container__link" >
+                <img  class="cabecalho-imagem"  src="img/usuario.svg" alt="Meu Perfil">
+                <p class="container__texto" >Meu Perfil</p>
+            </a>
+        </div>
+        
     </header>
 
     <section class="escola">
@@ -39,14 +84,46 @@
 
     </section>
 
+    <section class="carrossel">
+        
+        <h2 class="carrossel__titulo">Nossos Serviços</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/abstract-95721_1280.jpg" alt="função seno"></div>
+                <div class="swiper-slide"><img src="./img/background-5270959_1920.jpg" alt="mesa de estudo"></div>
+                <div class="swiper-slide"><img src="./img/banner-1044110_1920.jpg" alt="formula de bhaskara"></div>
+                <div class="swiper-slide"><img src="./img/board-4727472_1280.jpg" alt="quadro com fórmulas"></div>
+                <div class="swiper-slide"><img src="./img/chart-2785864_1280.jpg" alt="relatorio"></div>
+                <div class="swiper-slide"><img src="./img/ecommerce-3562191_1920.jpg" alt="dispositivos móveis"></div>
+                <div class="swiper-slide"><img src="./img/halloween-background-5615520_1920.jpg" alt="halloween"></div>
+                
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+  
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+
     <section class="estudante">
         <h2 class="estudante-titulo">Quem sou</h2>
         <div class="estudante-div">
-            <img src="img/enzofoto.jpg" alt="foto do Enzo" class="estudante-imagem">
-            <h3 class="estudante-nome"> Enzo Hitsuo Yagui </h3>
+            <img src="img/enzofoto.jpg" alt="foto do enzofoto" class="estudante-imagem">
+            <h3 class="estudante-nome"> Gerson Cesar Grobe de Miranda </h3>
             <a href="https://github.com/enzoyagui/segundo-repositorio2E.git"> <img src="img/github.png" alt="icone do github" class="estudante-icone"> </a>
-            <a href="https://instagram.com/hitsuo_yagui"> <img src="img/insta.png" alt="icone do instagram" class="estudante-icone"> </a>
-            <a href="https://wa.me/5512982852255?text=Sou+o+aluno.+Enzo.+Como+posso+ajudar%3F"> <img src="img/whats.png" alt="icone do whatsapp" class="estudante-icone"> </a>      
+            <a href="https://instagram.com/hitsuo_yagui"> <img src="img/instagram.svg" alt="icone do instagram" class="estudante-icone"> </a>
+            <a href="https://wa.me/5512982852255?text=Sou+o+Enzo.+Como+posso+ajudar%3F"> <img src="img/whats.png" alt="icone do whatsapp" class="estudante-icone"> </a>      
         </div>
     </section>
 
@@ -54,6 +131,19 @@
         <img src="img/alurastart_logo.png" alt="logo da alura" class="rodape-imagem">
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new swiper(".swiper", {
+            spaceBetween: 10,
+            slidesPerView: 1,
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullests',
+            }
+        });
+    </script>
 </body>
 
 </html>
