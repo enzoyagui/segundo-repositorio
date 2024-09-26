@@ -2,8 +2,8 @@
 @import url(/styles/header.css);
 @import url(carrosel.css);
 :root {
-    --cor-principal: #845EC2;
-    --cor-secundaria: #D65DB1;
+    --cor-principal: #000000;
+    --cor-secundaria: #e60f0f;
     --cor-rosa: #FF6F91;
     --cor-laranja: #FF9671;
     --cor-fundo: #FFC75F;

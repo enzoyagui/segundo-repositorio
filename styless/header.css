@@ -27,7 +27,7 @@
 
 .container__imagem{
     padding: 1em;
-    width: 40px;
+    width: 100px; 
 }
 
 .cabecalho-lista{
@@ -35,7 +35,7 @@
     background-color: var(--cor-fundo);
     position: absolute;
     top: 100%;
-    width: 50vm;
+    width: 50vw;
 }
 
 .container__botao:checked~.cabecalho-lista{
