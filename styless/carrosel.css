@@ -36,6 +36,38 @@
     margin-bottom: 0.5em;
 }
 
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.decricao__titulo {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.descricao__titulo-produto {
+    color: var(--cor-principal);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+}
+
+.botoes__ancora {
+    background-color: var(--cor-secundaria);
+    padding: 1em 2.2em;
+    color: var(--cor-branco);
+    font-weight: 700;
+    text-decoration: none;
+}
 
 
 @media screen and (min-width: 1024px) {
