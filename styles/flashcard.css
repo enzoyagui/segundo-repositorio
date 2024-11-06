@@ -1,0 +1,70 @@
+#flashcard {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.cartao {
+    margin: 1rem 1rem;
+    background-color: var(--cor-botao);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao__conteudo{
+    text-align: center;
+    height: 100%;
+    /*   
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    */
+}
+
+.cartao__conteudo h3 {
+    background-color: var(--cor-principal);
+    text-align: left;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border: 1px solid var(--cor-rosa);
+    border-radius: 0.6rem;
+    font-size: 1vw;
+    color: var(--cor-branco);
+}
+
+.cartao__conteudo p {
+    margin-top: 1rem;
+    color: var(--cor-preto);
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.cartao__conteudo__pergunta p {
+    color: var(--cor-preto);
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p {
+    color: var(--cor-fundo);
+    font-weight: 700;
+}
+
+.cartao:hover .cartao__conteudo {
+    transform: rotateY(180deg);
+}
+
+.cartao__conteudo__pergunta,
+.cartão__conteudo__resposta {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao__conteudo__resposta {
+    transform: rotateY(180deg);
+}
