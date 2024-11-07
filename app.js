@@ -6,7 +6,7 @@ function criaCartao (item, pergunta, resposta) {
 
     cartao.className = 'cartao';
 
-    cartao.innerHTML = 
+    cartao.innerHTML = `
       <div class="cartao__conteudo">
                 <h3>Missão</h3>
                 
@@ -18,6 +18,17 @@ function criaCartao (item, pergunta, resposta) {
                     <p>Nossa missão é ... </p>
                 </div>
             </div>
+            `
+
+      
+            let respostaEstaVisivel = false;
+            
+            function viraCartao () {
+              respostaEstaVisivel = !variavelEstaVisivel;
+              cartao.classList.toogle('active', viraCartao);
+    }
+
+    cartao.addEventListener('click', viraCartao);
 
     flashcard.appendChield(cartao);
 
