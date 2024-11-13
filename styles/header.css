@@ -60,7 +60,10 @@
 }
 
 .container-titulo {
-    display: none;
+    display: block;
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        font-size: 25px;
 }
 
 .menu__lista-item {
