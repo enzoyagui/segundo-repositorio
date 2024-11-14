@@ -62,8 +62,8 @@
 .container-titulo {
     display: block;
         font-family: var(--fonte-principal);
-        font-weight: 400;
-        font-size: 15px;
+        font-weight: 350;
+        font-size: 25px;
 }
 
 .menu__lista-item {
