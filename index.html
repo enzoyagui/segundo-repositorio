@@ -214,19 +214,24 @@ Sign<!DOCTYPE html>
         <img src="img/alurastart_logo.png" alt="logo da alura" class="rodape-imagem">
     </footer>
 
+    <script src="favorito.js" ></script>
+    <script src="app.js" ></script>
+    <script src="missaoVisaoValores.js" ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-        const swiper = new Swiper(".swiper", {
-            spaceBetween: 10,
-            slidesPerView: 1,
-
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullests',
-            },
+        var swiper = new Swiper(".swiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         });
-    </script>
+      </script>
+
 </body>
 
 </html>
