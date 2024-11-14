@@ -3,7 +3,7 @@
 @import url(/styles/carrosel.css);
 @import url(/styles/flashcard.css);
 :root {
-    --cor-principal: #ffffff;
+    --cor-principal:#ffc75f;
     --cor-secundaria: #e60f0f;
     --cor-rosa: #FF6F91;
     --cor-laranja: #FF9671;
