@@ -7,7 +7,7 @@ criaCartao (
 criaCartao (
     'Visão',
     'Saiba qual é a visão da minha empresa!',
-    'uma forma fácil e prática de começar empreende e ganhar seu propio dinheiro'
+    'uma forma fácil e prática de começar empreender e ganhar seu próprio dinheiro'
 )
 
 criaCartao (
