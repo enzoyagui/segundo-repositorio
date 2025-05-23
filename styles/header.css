@@ -89,6 +89,7 @@ main {
 
 .container__texto {
     display: none;
+    margin-bottom: 0rem;
 }
 
 .menu-acessibilidade{
