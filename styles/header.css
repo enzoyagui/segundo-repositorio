@@ -81,6 +81,7 @@ main {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+    margin-bottom: 0rem;
 }
 
 .opcoes {
