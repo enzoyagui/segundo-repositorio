@@ -118,86 +118,32 @@ main {
 }
 
 .alto-contraste {
-    background-color: var(#e60f0f);
-    color: var(--branco)
+    background-color: var(--preto);
+    color: var(--branco);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1024px) {
-    .container-titulo{
-        display: block;
-        font-family: var(--fonte-principal);
-        font-weight: 400;
-        font-size: 25px;
-    }
-
-    .cabecalho__menu{
-        display: none;
-    }
-
-    .cabecalho__favorito {
-        display: none;
-    }
-
-    .opcoes {
-        display: flex;
-    }
-
-    .opcoes__item{
-        padding: 0 2em;
-        text-transform: uppercase;
-        color: var(--branco);
-    }
-
-    .opcoes__link{
-        text-decoration: none;
-        color: var(--branco);
-    }
-
-    .opcoes__botao:checked~.cabecalho-lista{
-        display: block;
-        width: auto;
-    }
-
-    .opcoes__botao{
-        display:none;
-    }
-
-    #container__left {
-        margin-right: 50px;
-    }
-
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--preto);
+    color: var(--branco);
 }
 
-@media screen and (min-width: 1728px){
-    .container__link {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: var(--branco);
-    }
+.alto-contraste .nav-link {
+    color: var(--laranja-claro);
+}
 
-    .cabecalho {
-        padding: 0 2em;
-    }
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--laranja-claro);
+    color: var(--preto);
+}
 
-    .opcoes {
-        margin-right: auto;
-    }
+.alto-contraste #tropicalia {
+    background: none;
+}
 
-    .container__texto {
-        display: block;
-    }
-
+.alto-contraste #galeria {
+    background-color: var(--preto);
 }
